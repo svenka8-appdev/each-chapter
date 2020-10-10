@@ -4,17 +4,18 @@
 #  The program should print each letter in the word the number of times it appears in the word.
 
 p "Enter a word:"
-#word = gets.chomp.split("")
-word = ["a", "s", "d", "f", "a", "d", "a", "s", "d", "f"]
-p uniqword=word.uniq()
+word = gets.chomp.split("")
+#word = ["a", "s", "d", "f", "a", "d", "a", "s", "d", "f"]
+#p uniqword=word.uniq()
 #unique= word.uniq
 #p unique
 #unique
-uniqword.each_with_index do |letter, number| 
+word.each_with_index do |letter, number| 
 #for letter[]
  # do
-p letter
-p word.count(letter)
+#p letter
+wc= word.count(letter)
+puts "#{letter} appears #{wc} times"
 #lettercount=1
 #p letter
 #lettercount=lettercount+number
