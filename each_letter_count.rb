@@ -6,11 +6,20 @@
 p "Enter a word:"
 #word = gets.chomp.split("")
 word = ["a", "s", "d", "f", "a", "d", "a", "s", "d", "f"]
+p uniqword=word.uniq()
 #unique= word.uniq
 #p unique
 #unique
-word.each do |letter| 
+uniqword.each_with_index do |letter, number| 
+#for letter[]
+ # do
+p letter
+p word.count(letter)
+#lettercount=1
 #p letter
-#p word.at(3) # this works to print f which is at position 3 (0,1,2,3) 10 times - which is the letter  count
+#lettercount=lettercount+number
+#p lettercount
+ # end
+#p word.at(letter.to_i) # this works to print f which is at position 3 (0,1,2,3) 10 times - which is the letter  count
 #p index
 end
