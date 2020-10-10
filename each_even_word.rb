@@ -4,3 +4,11 @@
 # 
 
 p "Enter a list of words separated by spaces:"
+#list= gets.chomp.split()
+list = ["cat", "bat", "root"]
+p list
+list.each do |evenodd|
+if evenodd.length.even?
+  p len
+end
+end
